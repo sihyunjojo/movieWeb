@@ -128,5 +128,39 @@
     //setCouter(counter + 1);
     setCounter((cuurent) => current +1); //이게 더 안전한 방법이다. 
 
+    ## 3.5(inputs and State)
+    label에 for이라는 prop은 JS의 용어이다 이미 선점된 단어이다. 
+    지금은 우리는 JSX를 쓰고 있어서 괜찮은거다. 이나중에는 class를 className이라고 써야하고 for을 HtmlFor이라고 사용해야한다.
 
+    지금은 production.min.js버전을 사용중이여서 가능하다.
+
+    아직 ReactJS를 쓰지 않아서 괜찮다.
+
+    ReactJs는 우리가 사용하고 있는 normal JS와 비슷하다
+
+    event.target.value에서 값을 찾아오는 것도 같다. 
+
+    onchange가 일어났을때 onchange()(발생한 event에 대해서 event.target.value의 값을 가져오는 역할)가 실행되어서 데이터를 업데이트 해준다. 
+    input은 스스로 값을 업데이트한다. 
+    
+    ##3.6(State Practive part One)
+    
+    우리가 onchange = onchange()을 삭제하게 되면
+    input id=minutes 의 value가 state이고 default값이 0이기 떄문에 값의 입력이 되지 않는다.
+    업데이트가 이루워지지 않는다.
+
+    disable의 속성을 주면 클릭을 할 수 없다.     
+
+    ## 3.7(State Practice part Two)
+
+    Flip function만들기
+
+    state를 조작해서 만들어 줄 것이다.
+    state 값으로 input을 enabled 할지 안할지 정해줄 수 있다.
+
+    hour에 
+    changeon함수를 사용하고 싶읖떈 value를 바꿔줘야했다.
+    기존의 코드는 minute를 썻을때에 한에서만 값을 바꿔주는 것이였다.
+
+    disabled={!flipped}//{flipped === true}
 # 하고 싶은 공부
