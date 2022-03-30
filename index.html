@@ -1,19 +1,21 @@
-<!DOCTYPE html>>
-
+<!DOCTYPE html>
 <html>
 
 <body>
-    <button id="btn">Click me</button>
+    <div id="root"></div>
 </body>
-
-</body>
+<script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    const root = document.getElementById("root"); function App() { const [counter, setCounter] = React.useState(0); const onClick = () => { //setCouter(counter + 1); setCounter((cuurent) => current +1); //이게 더 안전한 방법이다. }; console.log("renderred"); return
+    (
+    <div>
+        <h3>Total Clicks:{counter} </h3>
+        <button onClick={onClick}>Click me</button>
+    </div>
+    ); } ReactDOM.render(
+    <App />, root);
+</script>
 
 </html>
-<script>
-    const button = document.getElementById("btn");
-
-    function handleClock() {
-        console.log("i have been clicked");
-    }
-    button.addEventListener("click", handleClock);
-</script>
