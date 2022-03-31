@@ -162,5 +162,20 @@
     changeon함수를 사용하고 싶읖떈 value를 바꿔줘야했다.
     기존의 코드는 minute를 썻을때에 한에서만 값을 바꿔주는 것이였다.
 
-    disabled={!flipped}//{flipped === true}
+    disable
+    
+    ## 3.8(recap)
+    hour과 minutes의 disable은 항상 반대이다. 
+    
+    hour과 minutes의 onchange에 같은 함수를 사용하였으니까 
+    amount를 이용해서 입력값을 받게해준다.
+
+    flipped의 상태에 따라 input에 값이 다르게 보여진다. 
+
+
+    ## 3.9(final practice and recap)
+    사용자가 원하는 단위를 변환할 수 있게 메뉴바를 만들어줌.
+
+    
+    
 # 하고 싶은 공부
