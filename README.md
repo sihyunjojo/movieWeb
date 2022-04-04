@@ -1,5 +1,8 @@
 # movieWeb
 
+# 해야할 것
+** 메뉴 추가로 더 만들기 **
+
 # 공부 중
 
 ## 2.0(instoduction)
@@ -118,20 +121,25 @@
     인자로 넘겨주는 값은 state의 초기값이다.
      count를 갱신하기 위해 this.setState()를 호출합니다.
 
-     ## 3.3(Recap)
-
+## 3.3(Rec
     modifier함수를 사용해 state를 바꿀떄 컴포넌트(app()) 전체가 재생성 될거다.
     return도 생성되고 새로운 counter의 값을 가지고 한번 더 실행이 될거다. 
 
-    ## 3.4(State Functions)
+## 3.4(State Functions)
+
+
 
     //setCouter(counter + 1);
     setCounter((cuurent) => current +1); //이게 더 안전한 방법이다. 
 
-    ## 3.5(inputs and State)
+## 3.5(inputs and State)
     label에 for이라는 prop은 JS의 용어이다 이미 선점된 단어이다. 
     지금은 우리는 JSX를 쓰고 있어서 괜찮은거다. 이나중에는 class를 className이라고 써야하고 for을 HtmlFor이라고 사용해야한다.
 
+    
+    
+    
+    
     지금은 production.min.js버전을 사용중이여서 가능하다.
 
     아직 ReactJS를 쓰지 않아서 괜찮다.
@@ -143,7 +151,7 @@
     onchange가 일어났을때 onchange()(발생한 event에 대해서 event.target.value의 값을 가져오는 역할)가 실행되어서 데이터를 업데이트 해준다. 
     input은 스스로 값을 업데이트한다. 
     
-    ##3.6(State Practive part One)
+## 3.6(State Practive part One)
     
     우리가 onchange = onchange()을 삭제하게 되면
     input id=minutes 의 value가 state이고 default값이 0이기 떄문에 값의 입력이 되지 않는다.
@@ -151,7 +159,7 @@
 
     disable의 속성을 주면 클릭을 할 수 없다.     
 
-    ## 3.7(State Practice part Two)
+## 3.7(State Practice part Two)
 
     Flip function만들기
 
@@ -164,7 +172,7 @@
 
     disable
     
-    ## 3.8(recap)
+## 3.8(recap)
     hour과 minutes의 disable은 항상 반대이다. 
     
     hour과 minutes의 onchange에 같은 함수를 사용하였으니까 
@@ -173,9 +181,47 @@
     flipped의 상태에 따라 input에 값이 다르게 보여진다. 
 
 
-    ## 3.9(final practice and recap)
+## 3.9(final practice and recap)
     사용자가 원하는 단위를 변환할 수 있게 메뉴바를 만들어줌.
 
-    
-    
+
+## 4.0(props)
+    로직에서 isolation과 encapsulation을 적용시켜서
+    이걸 이용하면 분할 할 수 있다. 
+    우린 이 컴포넌트를 가지고 우리가 원하는만큼 이동 시킬 수 있다. 
+
+    이 로직을 고립시켜서 분리된 컴포넌트로 만들을 것이다.
+
+    footer인지 header인지 nav인지 
+
+    각각의 로직들을 각각의 조각들로 분리시켜서 만드는게 좋다. 
+
+    html과 jsx를 합쳐서 매우 큰 것
+
+    prop 
+    어플리케이션은 수 많은 버튼을 가지고 있음. 
+    //props는 첫번쨰이자 유일한 인자다. 이 btn이 전달 받는 유일한 인자이다.
+
+    컴포넌트 : 단지 함수다. (어떤 JSX를 반환하는)
+
+    완전 같은 컴포넌트인데 글씨만 다르다면 
+    우리들의 컴포넌트들을 조금은 설정이가능하게 해주는 것이다.
+ 
+    실제로는 props를 자주 쓰지는 않을 것이다. 
+    디른 더 좋은 방법이 있다. 그것을 자주 사용할 것이다.
+    => {text} 이렇게 사용하는 것이다.
+
+## 4.1(memo)
+    Btn태그 내부의 onclick은 prop의 일부로서 이벤트 리스너의 역할이 아니다 btn안에 전달 되고 있는 것이다. 
+    prop을 전달하는거지 react가 이벤트 리스너로 해주는 것이 아니다.
+    button 태그를 위한 이벤트 리스너가 아니다. BTN의 prop이다.
+
+
+
+
+
+
+
+
+
 # 하고 싶은 공부
